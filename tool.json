@@ -1,0 +1,56 @@
+{
+  "name": "text-analyzer",
+  "version": "1.0.0",
+  "description": "أداة لتحليل النصوص وإظهار إحصائيات عنها",
+  "author": {
+    "name": "اسمك",
+    "email": "بريدك@example.com"
+  },
+  "category": "التحليل",
+  "dependencies": [],
+  "platforms": ["web"],
+  "tags": ["تحليل", "نصوص", "إحصائيات"],
+  "features": [
+    "حساب عدد الكلمات",
+    "حساب عدد الأحرف",
+    "تحليل تكرار الكلمات",
+    "تحديد اللغة"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/text-analyzer-tool"
+  },
+  "requirements": {
+    "memory": "512",
+    "storage": "10",
+    "os": ["web"]
+  },
+  "permissions": [],
+  "installationSteps": [
+    "تحميل ملفات الأداة",
+    "تثبيت التبعيات"
+  ],
+  "uninstallationSteps": [
+    "إزالة ملفات الأداة",
+    "تنظيف التخزين المؤقت"
+  ],
+  "configurationOptions": [
+    {
+      "name": "maxWords",
+      "type": "number",
+      "description": "الحد الأقصى للكلمات للتحليل",
+      "default": 1000,
+      "required": false
+    },
+    {
+      "name": "language",
+      "type": "select",
+      "description": "لغة التحليل الافتراضية",
+      "options": ["ar", "en"],
+      "default": "ar",
+      "required": true
+    }
+  ],
+  "supportedLanguages": ["ar", "en"]
+}
